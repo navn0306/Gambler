@@ -13,7 +13,7 @@ public class Gambler {
     public static void main(String[] args) {
         for (int day = 1; day <= 20; day++) {
             dailyStake = 100;
-            //System.out.println("DAY Number " + day);
+
             while (dailyStake >= 51 && dailyStake <= 149) {
                 int result = (int) ((Math.random() * 10 % 2) + 1);
                 if (result == win) {
@@ -30,7 +30,7 @@ public class Gambler {
                     totalAmountLostForMonth -= 50;
                 }
             }
-            //System.out.println("Daily Stake " + dailyStake);
+           
         }
         System.out.println("Won times " + winCount);
         System.out.println("Lost count " + lossCount);
